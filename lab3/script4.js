@@ -1,10 +1,17 @@
 let src = prompt("Enter sequence")
 let stack = []
 
-for(s of src){
+label: for(s of src){
     switch (s){
         case "(": stack.push(s); break;
-        case ")": stack.pop(s); break;
+        case ")": {
+            if (stack.length == 0){
+                stack.push(s)
+                break label;
+            }
+            stack.pop(s); 
+            break;
+        }
     }
 }
 

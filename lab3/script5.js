@@ -12,10 +12,3 @@ let obj = {
         hair: 10
     }
 }
-
-console.log(obj)
-let cobj = copy(obj)
-cobj.age = 20
-cobj.things[0] = 20
-cobj.head.hair = "Brown"
-console.log(cobj)

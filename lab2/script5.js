@@ -1,6 +1,6 @@
 function isPolyndrom(s){
     for(let i = 0; i < s.lenth/2; i++){
-        if(s[i] != s[s.lenth - i - 1]){
+        if (s[i] != s[s.lenth - i - 1]){
             return false
         }
     }

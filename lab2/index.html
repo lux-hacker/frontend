@@ -9,11 +9,13 @@
     <script src="/lab2/script1.js"></script>
     <script src="/lab2/script2.js"></script>
     <script>
+        function add(value){
+            this.count += value
+        }
+
         let counter = {
             count: 0,
-            add(value){
-                this.count += value
-            },
+            add: add,
             sub(value){
                 this.count -= value
             }

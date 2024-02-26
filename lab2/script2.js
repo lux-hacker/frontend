@@ -12,18 +12,18 @@ function isPrime(num){
 function getNPrimeNums(n){
     let arr = []
     let count = 0
-    for(let i = 2; i < 10000; i++){
+    let i = 2
+    while(count < n){
         if(isPrime(i) == true){
             arr.push(i)
             count++
         }
-        if(count == n){
-            break
-        }
+        i++
+        
     }
     return arr
 }
 
-let n = Number(prompt("Enter N"))
+let n = parseInt(prompt("Enter N"))
 let arr = getNPrimeNums(n)
 alert(arr.join(" "))
