@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа 7</title>
+
+    <style>
+        .circle {
+            width: 30px; /* Задаем ширину и высоту равными, чтобы получился круг */
+            height: 30px;
+            border-radius: 50%; /* Задаем радиус круга */
+            background-color: blue; /* Задаем цвет */
+        }
+    </style>
+
+</head>
+<body>
+    <div id="circle" class="circle"></div>
+
+    <script>
+        let element = document.querySelector(".circle")
+        document.addEventListener('mousemove', (e) => {
+            console.log(e);
+            element.style.position = 'fixed';
+            element.style.left = `${e.pageX - 20}px`
+            element.style.top = `${e.pageY - 20}px`
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа 6</title>
+
+    <script>
+        document.addEventListener("selectstart", function(e){
+            e.preventDefault()
+        })
+
+        document.addEventListener("keydown", function(e){
+            e.preventDefault()
+        })
+
+        document.addEventListener("contextmenu", function(e){
+            e.preventDefault()
+        })
+    </script>
+
+</head>
+<body>
+    <h1>Добро пожаловать!</h1>
+
+    <p>
+        <i>Приветствуем</i>
+        <u>вас</u>
+        <b>в нашем</b>
+        <a href="example.com">магазине</a>!
+    </p>
+
+    <p>
+        &lt;h1&gt;Теорема Пифагора&lt;/h1&gt;: c<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> 
+    </p>
+
+    <table border="1" width="100%">
+        <tr>
+            <td colspan="2">Информация</td>
+        </tr>
+        <tr>
+            <td>Старая цена: <s>1000</s> ₽</td>
+            <td>Новая цена: 500 ₽</td>
+        </tr>
+    </table>
+</body>
+</html>

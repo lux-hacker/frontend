@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа 7</title>
+
+    <style>
+        body {
+            height: max-content;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows:  3fr 3fr 6fr 6fr 3fr;
+            gap: 20px;
+            font-family:Arial, Helvetica, sans-serif
+        }
+        .logo {
+            grid-column: span 3;
+            text-align: center;
+        }
+        header, footer {
+            grid-column: span 3;
+            text-align: center;
+            background-color: lightgrey;
+            align-content: center;
+        }
+        header > a {
+            padding: 5px;
+            vertical-align: middle;
+        }
+        .char {
+            grid-column: span 3;
+            background-color: lightgray;
+            text-align: center;
+            padding-top: 1%;
+        }
+        .item {
+            background-color: lightgray;
+            text-align: center;
+            padding-top: 2%;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="logo"><h1>Логотип</h1></div>
+    <header>
+        <a href=“#home”>Домой</a>
+        <a href=“#catalogs”>Товары</a>
+        <a href=“#services”>Услуги</a>
+        <a href=“#about”>О нас</a>
+        <a href="#contacts">Контакты</a>
+    </header>
+
+    <div class="char">Характеристики</div>
+
+    <div class="item">Колонка 1</div>
+    <div class="item">Колонка 2</div>
+    <div class="item">Колонка 3</div>
+
+    <footer>© MEPHI 2023</footer>
+</body>
+</html>

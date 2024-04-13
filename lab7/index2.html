@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа 7</title>
+    <style>
+        .device {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 1024px) {
+            .device:nth-child(1) {
+                display: none;
+            }
+        
+            .device:nth-child(2) {
+                display: block;
+            }
+
+            .device:nth-child(3) {
+                display: none;
+            }
+            
+        }
+            
+        @media screen and (max-width: 768px) {
+            .device:nth-child(1) {
+                display: none;
+            } 
+            .device:nth-child(2) {
+                display: none;
+            }  
+            
+            .device:nth-child(3) {
+                display: block;
+            } 
+        }
+    </style>
+</head>
+<body>
+    <div class="device">Desktop</div>
+    <div class="device">Tablet</div>
+    <div class="device">Mobile</div>
+</body>
+</html>
